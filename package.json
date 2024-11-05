@@ -1,0 +1,36 @@
+{
+	"name": "amuse.ing",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Think Letterboxd, but for music.",
+	"main": "index.js",
+	"scripts": {
+		"devstart": "nodemon --es-module-specifier-resolution=node index.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@prisma/client": "^5.20.0",
+		"axios": "^1.7.7",
+		"body-parser": "^1.20.3",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dotenv": "^16.4.5",
+		"express": "^4.21.1",
+		"express-session": "^1.18.1",
+		"http": "^0.0.1-security",
+		"module-alias": "^2.2.3",
+		"mongodb": "^6.9.0",
+		"mongoose": "^8.7.0",
+		"morgan": "^1.10.0",
+		"nodemon": "^3.1.7"
+	},
+	"devDependencies": {
+		"@types/cookie-parser": "^1.4.7",
+		"@types/cors": "^2.8.17",
+		"@types/express": "^5.0.0",
+		"@types/express-session": "^1.18.0",
+		"@types/morgan": "^1.9.9",
+		"prisma": "^5.20.0"
+	}
+}

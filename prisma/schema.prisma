@@ -1,0 +1,25 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model Artist {
+  id          String      @id @map("_id") 
+  name        String
+  popularity  Int
+  uri         String
+  href        String
+  spotifyUrl  String      @map("external_urls_spotify") 
+  genres      String[]   
+
+  followersId String?    
+
+
+  @@map("artists")      
+}
+
